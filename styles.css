@@ -1,0 +1,162 @@
+body {
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    height:80vh;
+    width: 375px;
+    margin-bottom: 30px;
+}
+
+.top-bar {
+    background-color: #1e828c;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+.top, .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.icon {
+    width: 30px; /* Set the width of the icon */
+    height: 30px; /* Set the height of the icon */
+    margin-right: 5px; /* Add some spacing */
+}
+.icon2 {
+    width: 60px; /* Set the width of the icon */
+    height: 60px; /* Set the height of the icon */ 
+}
+.left, .right {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    background-color: #ffffff;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+
+.icon-box {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #1e828c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #1e828c;
+    padding: 20px;
+    height: 100px; /* Added height */
+    background-color: #f0f0f0; /* Added background color for visibility */
+    align-items: center; /* Added alignment */
+}
+
+.icon-box-items{
+    width: 25%; /* Added width */
+    height: 100px;
+    justify-content: space-evenly; /* Changed to evenly distribute items */
+    align-items: center; /* Added alignment */
+}
+
+.chatbot-icon {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    margin-top: 40px;
+    left: 300px; /* Adjust as needed */
+}
+
+.chatbot-icon img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%; /* Make it circular */
+    background-color: #fff; /* Background color for the icon */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+.bottom-nav {
+    position: fixed;
+    bottom: 20%;
+    left: 0;
+    width: 375px;
+    background-color: #1e828c;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    height: auto; /* Added height */
+    margin-left: 10px;
+}
+.nav-items{
+    width: 20%; /* Added width */
+    margin-left: 10px;
+    height: 80px;
+    justify-content: space-evenly; /* Changed to evenly distribute items */
+    align-items: center; /* Added alignment */
+}
+.div-item-text{
+    margin-top: -15px; /* Added margin */
+}
+.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.bottom-nav a.active {
+    color: white;
+}
